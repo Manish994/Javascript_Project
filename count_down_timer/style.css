@@ -1,0 +1,9 @@
+#timerDiv {
+   height: 60px;
+   padding: 0;
+}
+
+#content {
+   background-color: rgba(27, 26, 26, 0.3);
+   height: 1000px;
+}

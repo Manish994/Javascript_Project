@@ -1,0 +1,75 @@
+<html lang="en-us">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JavaScript - AudioPlayer</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+   <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+   <div class="player">
+      <div class="container">
+
+         <!-- ============== Top Icons ==============  -->
+
+         <div class="icons">
+            <a href="#"><i class="fa fa-bars"></i></a>
+            <h1>Music</h1>
+            <a href="#"><i class="far fa-heart"></i></a>
+         </div>
+
+         <!-- ============== img ==============  -->
+
+         <div class="img">
+            <img src="img/1.jpg">
+         </div>
+
+         <!-- ============== Title ==============  -->
+
+         <div class="title">
+            <h1>Nepathaya Songs</h1>
+            <p>Cool Artists</p>
+         </div>
+
+         <!-- ============== time ==============  -->
+
+         <div class="time">
+            00:00
+            <span>00:00</span>
+         </div>
+
+         <!-- ============== Seek Bar ==============  -->
+
+         <div class="seek">
+            <div class="fill"></div>
+         </div>
+      </div>
+
+      <!-- ============== Audio Buttons ==============  -->
+
+      <div class="audio-btns">
+         <div class="play-btns">
+            <a href="#" onclick="prevAudio()"><i class="fa fa-backward"></i></a>
+            <a href="#" class="play-pause" onclick="togglePlayPause()"><i class="fa fa-play"></i></a>
+            <a href="#" onclick="nextAudio()"><i class="fa fa-forward"></i></a>
+         </div>
+
+         <div class="repeat-btns">
+            <a href="#"><i class="fa fa-retweet"></i></a>
+            <span>
+               <button class="decrease" onclick="decreaseVolume()">-</button>
+               <a href="#" class="volume-up"><i class="fa fa-volume-up"></i></a>
+               <button class="increase" onclick="increaseVolume()">+</button>
+            </span>
+            <a href="#"><i class="fa fa-random"></i></a>
+         </div>
+      </div>
+   </div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="audioPlayer.js"></script>
+</body>
+
+</html>
